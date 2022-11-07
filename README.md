@@ -8,7 +8,7 @@ The tags are structured as `ghcr.io/eugenmayer/unison:$UNISON_VERSION-$OCAML_VER
 
 ```
 # this will pull the AMD or ARM version, depending on your current arch
-docker pull ghcr.io/eugenmayer/unison:2.52.1-4.12.0
+docker pull ghcr.io/eugenmayer/unison:2.53.0-4.14.0
 ```
 
 ### What does it do ?
@@ -38,7 +38,7 @@ Or for arm base builds change the image using BASE_IMAGE
 
 For example,
 
-`docker build --build-arg "OCAML_VERSION=4.12.0" --build-arg "UNISON_VERSION=2.52.1" -t custom-docker-image-unison .`
+`docker build --build-arg "OCAML_VERSION=4.14.0" --build-arg "UNISON_VERSION=2.53.0" -t custom-docker-image-unison .`
 
 The configuration in the docker-sync.yml would then be:
 
